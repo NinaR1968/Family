@@ -1,0 +1,37 @@
+:root {
+  --paper: #F6ECD9;
+  --text: #3A2F1F;
+  --muted: #686C71;
+  --ok: #4F6F4E;
+  --error: #A9443A;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  gap: 16px;
+  padding: 16px;
+  text-align: center;
+  background: var(--paper);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+}
+
+h1 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 2.5rem;
+}
+
+.status {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--muted);
+}
+
+.status.ok { color: var(--ok); }
+.status.error { color: var(--error); }

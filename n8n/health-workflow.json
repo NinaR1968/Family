@@ -1,0 +1,28 @@
+{
+  "name": "Family Recipes - daily health",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": { "interval": [ { "field": "days", "daysInterval": 1 } ] }
+      },
+      "name": "Every day",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [0, 0]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "https://family-recipes-lac.vercel.app/api/health"
+      },
+      "name": "GET /api/health",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [240, 0]
+    }
+  ],
+  "connections": {
+    "Every day": { "main": [ [ { "node": "GET /api/health", "type": "main", "index": 0 } ] ] }
+  },
+  "settings": {}
+}
