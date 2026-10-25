@@ -35,7 +35,7 @@
 - Opus: Milestone 4 (תמלול כתב יד רוסי) ו-Milestone 5 (שכבת ה-AI).
 
 ## גיט, GitHub ולינק חי
-- ריפו ציבורי ב-GitHub, משתמש `NinaR1968`, ענף `main` בלבד.
+- ריפו ציבורי ב-GitHub: https://github.com/NinaR1968/Family, ענף `main` בלבד.
 - ההתחברות ל-GitHub דרך Git Credential Manager, ונינה מתחברת בעצמה. Claude לא שומר, מבקש או מקליד סיסמאות.
 - **הלינק החי הוא Vercel**, שמחובר לריפו ומתעדכן בכל דחיפה ל-`main`. לא GitHub Pages, כי הוא לא מריץ את פונקציות ה-`api`.
 - בסוף כל שלב מוסרים לנינה את הלינק החי.
